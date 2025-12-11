@@ -1,0 +1,11 @@
+# Example tool versions for a smooth experience with ApiPlaygroundPy
+
+python: 3.9+
+pip: 23+
+virtualenv/venv: any recent
+jupyter: 1.0+
+
+# Python libraries (see requirements.txt for exact ranges)
+requests: 2.31+
+pandas: 2.2+
+python-dotenv: 1.0+

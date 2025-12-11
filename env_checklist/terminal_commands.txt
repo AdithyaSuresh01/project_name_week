@@ -1,0 +1,35 @@
+# Common terminal commands for ApiPlaygroundPy environment
+
+# 1. Create and activate virtual environment
+python -m venv .venv
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
+# Windows cmd
+.venv\Scripts\activate.bat
+
+# macOS / Linux
+source .venv/bin/activate
+
+# 2. Upgrade pip
+python -m pip install --upgrade pip
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run Python REPL and quick import check
+python - << "EOF"
+from src.api_playground import ApiPlayground
+from src.data_processing import to_dataframe
+from src.utils.logger import get_logger
+
+logger = get_logger(__name__)
+logger.info("Environment OK")
+
+client = ApiPlayground("https://jsonplaceholder.typicode.com")
+print("Status:", type(client))
+EOF
+
+# 5. Start Jupyter Notebook
+jupyter notebook data_api_playground.ipynb

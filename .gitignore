@@ -12,36 +12,42 @@ build/
 develop-eggs/
 dist/
 downloads/
+eggs/
 .eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
 *.egg-info/
+.installed.cfg
 *.egg
+MANIFEST
 
 # Virtual environments
-.venv/
+.env
+.venv
+env/
 venv/
 ENV/
-env/
+env.bak/
+venv.bak/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# VS Code settings
+# IDE / editor
 .vscode/
-
-# macOS
-.DS_Store
-
-# PyCharm
 .idea/
+*.swp
+*.swo
 
-# Environment files
-.env
-.env.*
+# OS files
+.DS_Store
+Thumbs.db
 
-# Logs
+# Local data / cache
 *.log
-
-# Local data / scratch files (customize as needed)
-.data/
-*.tmp
-*.temp
+*.sqlite3
+.cache/
+.mypy_cache/
+.pytest_cache/
